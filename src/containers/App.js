@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import Navbar from '../components/Navbar';
+import Nav from '../components/navComponents/Nav';
 import Pages from '../components/pagesComponent/Pages';
 
 // Includes
@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App ">
-        <Navbar />
+        <Nav />
         <Pages />
       </div>
     );
