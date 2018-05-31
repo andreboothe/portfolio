@@ -12,7 +12,7 @@ const Navbar = () => {
                             <a href="#home" className="brand-logo">
                                 <h3>Andre Boothe</h3>
                             </a>
-                            <a href="#" data-target="mobile-nav" className="sidenav-trigger">
+                            <a href="" data-target="mobile-nav" className="sidenav-trigger">
                                 <i className="material-icons">menu</i>
                             </a>
                             <ul className="right hide-on-med-and-down">

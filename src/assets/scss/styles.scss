@@ -1,5 +1,8 @@
-@import './base/_global.scss';
 @import './base/_variables.scss';
+@import './base/_global.scss';
 
-@import './modules/_sidenav.scss';
-@import './modules/_fixednav.scss';
+
+@import './modules/navigation/_sidenav.scss';
+@import './modules/navigation/_fixednav.scss';
+
+@import './modules/pages/_landingPage.scss';

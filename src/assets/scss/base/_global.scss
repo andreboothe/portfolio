@@ -2,5 +2,9 @@
 
 body,html{
     height:100%;
-    
+    font-family: sans serif;
+}
+
+.teal-bottom-border{
+    border-bottom: 5px solid $teal;
 }
