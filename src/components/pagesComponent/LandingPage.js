@@ -6,7 +6,7 @@ const LandingPage = () => {
 
     return (
 
-        <section id="landingpage" >
+        <section id="home" className="section scrollspy full-height">
             
             <div className="white-text">
                 <h1>My passion for <span className="teal"> problem solving,</span><br />

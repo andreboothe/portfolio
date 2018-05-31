@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <div id="home" className="App scrollspy">
+      <div className="App ">
         <Navbar />
         <Pages />
       </div>
