@@ -1,11 +1,12 @@
-#landingpage{
-    max-height: 100vh;
-    min-height: 92vh;
+#home{
+    
 
     background: $blackOverlay, $landingPageImg;
     background-size: cover;
 
-    
+    div{
+        height:100%;
+    }
 
     h1{
         

@@ -5,6 +5,26 @@ body,html{
     font-family: sans serif;
 }
 
+.full-height{
+    min-height: 100vh;
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
 .teal-bottom-border{
     border-bottom: 5px solid $teal;
+}
+
+.page-header{
+    display: block;
+    color: $white;
+    background: $teal;
+    padding-left: 1.5em;
+    line-height: 120px;
+    
+}
+
+
+h1{
+    margin:0;  
 }
