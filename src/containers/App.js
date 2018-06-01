@@ -72,6 +72,7 @@ class App extends Component {
   navigationInit = () => {
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {});
+    console.log('here');
   }
 
   scrollSpyInit = () => {
