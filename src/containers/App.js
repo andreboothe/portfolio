@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 // Components
 import Nav from '../components/navComponents/Nav';
-
 import LandingPage from '../components/pagesComponent/LandingPage';
 import AboutPage from '../components/pagesComponent/AboutPage';
 import EducationPage from '../components/pagesComponent/EducationPage';
@@ -31,10 +30,15 @@ class App extends Component {
 
   componentDidMount(){
     const githubApi = 'https://api.github.com/users/andreboothe/repos?per_page=100';
-    this.navigationInit();
-    this.scrollSpyInit();
-    this.toolTipInit();
-    this.setProjects(githubApi);
+    
+    this.setProjects(githubApi)
+      .then(() => {
+        this.navigationInit();
+        this.scrollSpyInit();
+        
+      }
+    )
+      
   }
 
   getDisplayProjects = (projects) => {
@@ -51,7 +55,8 @@ class App extends Component {
 
   setProjects = (apiUrl) => {
     
-    fetch(apiUrl)
+    return new Promise( ( resolve, reject ) => {
+      fetch(apiUrl)
       .then(response => response.json())
       .then(myprojects => {
         const displayProjects = this.getDisplayProjects(myprojects);
@@ -59,20 +64,17 @@ class App extends Component {
           projects: displayProjects,
           loadedProjects: true
         });
-        
       })
-      .catch(`We could not get your projects from ${apiUrl}.` );
-  }
+      .then(resolve('Projects Obtained.'))
+      .catch(reject(`We could not get your projects from ${apiUrl}.` ));
 
-  toolTipInit = () => {
-    const toolTip = document.querySelectorAll('.tooltipped');
-    M.Tooltip.init(toolTip, {});
+    });
   }
-
+  
   navigationInit = () => {
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {});
-    console.log('here');
+    
   }
 
   scrollSpyInit = () => {
@@ -84,10 +86,11 @@ class App extends Component {
     const {loadedProjects, projects} = this.state;
 
     
-    return (!loadedProjects)?
-      <div className="loadingAnimation"></div>:
-      (
+    //  return (!loadedProjects)?
+    //   <div className="loadingAnimation"></div>:
+      return (
         <div className="App">
+          
           <Nav />
           <LandingPage />
           <AboutPage />
