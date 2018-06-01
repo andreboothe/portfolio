@@ -1,7 +1,9 @@
 #skills{
-
+    
+    
     .card{
         margin-bottom: 60px;
+        
     }
 
     h4{
@@ -11,8 +13,8 @@
     }
 
     .col{
+        display: block;
         
-
         img.responsive-img{
            
             max-height: 100px;
@@ -23,8 +25,15 @@
 
         h6{
             font-size: 150%;
+            vertical-align: middle;
         }
 
     }
 
+    @media(max-width: 600px){
+        .col.img.responsive-img{
+            max-height: 10px;
+            padding-bottom: 10px;
+        }
+    }
 }

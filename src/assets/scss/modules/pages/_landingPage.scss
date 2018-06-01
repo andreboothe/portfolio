@@ -26,4 +26,18 @@
     }
 
     
+
+    @media(max-width: 600px){
+        h1{
+            font-size: 250%;
+        }
+    }
+
+
+    @media(max-width: 400px){
+
+        h1{
+            font-size: 200%;
+        }
+    }
 }

@@ -73,3 +73,12 @@ h1{
   .no-border{
       border: 0;
   }
+
+
+  @media(max-width: 600px){
+    .page-header{
+        padding-left: 1.2em;
+        line-height: 90px;
+        font-size: 300%;
+    }
+  }

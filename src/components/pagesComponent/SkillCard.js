@@ -5,7 +5,7 @@ const SkillCard = ({category}) => {
     const skillsArray = category.skills.map((skill, index) => {
         return (
             
-            <div className="col s4 m2" key={index}>
+            <div className="col s6 m2" key={index}>
                 <img src={skill.imgSrc} alt="" className="responsive-img"/>
                 <h6>{skill.name}</h6>     
             </div>
