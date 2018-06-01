@@ -1,5 +1,5 @@
 
-// Assets
+// Includes
 import reactImg from '../../assets/images/react.png';
 import gitImg from '../../assets/images/git.png';
 import bootstrapImg from '../../assets/images/bootstrap.png';
