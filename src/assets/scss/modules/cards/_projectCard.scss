@@ -1,0 +1,39 @@
+.project-card{
+
+    .card{
+        border-left: 1px solid rgba(0,0,0,.2);
+        border-right: 1px solid rgba(0,0,0,.2);
+        
+    }
+
+    .flow-text{
+       
+        border-bottom:1px solid rgba(0,0,0,.2);
+        padding-bottom: .1em;
+        font-size: 130%;
+    }
+
+    .description-title{
+        border-bottom:1px solid rgba(0,0,0,.2);
+        font-size: 150%;
+        padding-bottom: .5em;
+    }
+
+    .card-title{
+        font-size: 150%;
+        
+    }
+
+   
+    
+   .small{
+       height: 100%;
+   }
+
+   .card-image{
+        height: 100% !important; 
+    }
+   img{
+       height: 300px;
+   }
+}
