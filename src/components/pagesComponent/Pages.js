@@ -5,6 +5,7 @@ import LandingPage from './LandingPage';
 import AboutPage from './AboutPage';
 import EducationPage from './EducationPage';
 import ContactPage from './ContactPage';
+import SkillPage from './SkillPage';
 
 const Pages = () => {
 
@@ -13,6 +14,7 @@ const Pages = () => {
             <LandingPage />
             <AboutPage />
             <EducationPage />
+            <SkillPage />
             <ContactPage />
         </section>
         
