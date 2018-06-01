@@ -6,7 +6,7 @@ const AboutPage = () => {
             <h1 className="page-header">About</h1>
             <div className="container flow-text">
                 <blockquote>
-                    <h3>
+                    <h3 className="blue-text">
                         Continuously growing Front End Developer with a drive for clean efficient 
                         code and learning new technologies.
                     </h3>
