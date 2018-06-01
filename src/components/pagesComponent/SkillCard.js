@@ -15,7 +15,7 @@ const SkillCard = ({category}) => {
     return (
         <div className="card">
             <div className="card-content">
-                <h4 class="blue-text">{category.name}</h4>
+                <h4 className="blue-text">{category.name}</h4>
                 <div className="row text-center">
                     {skillsArray}
                 </div>
