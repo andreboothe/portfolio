@@ -9,6 +9,7 @@ import ContactPage from '../components/pagesComponent/ContactPage';
 import SkillPage from '../components/pagesComponent/SkillPage';
 import CertificatePage from '../components/pagesComponent/CertificatePage';
 import ProjectPage from '../components/pagesComponent/ProjectPage';
+import FooterComponent from '../components/FooterComponent';
 
 // Includes
 import '../assets/css/styles.min.css';
@@ -32,13 +33,9 @@ class App extends Component {
     const githubApi = 'https://api.github.com/users/andreboothe/repos?per_page=100';
     
     this.setProjects(githubApi)
-      .then(() => {
-        this.navigationInit();
-        this.scrollSpyInit();
-        
-      }
-    )
-      
+      .then(this.navigationInit())
+      .then(this.scrollSpyInit())
+      .then(this.toolTipInit());
   }
 
   getDisplayProjects = (projects) => {
@@ -74,17 +71,29 @@ class App extends Component {
   navigationInit = () => {
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {});
-    
   }
 
   scrollSpyInit = () => {
     const scrollSpy = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(scrollSpy, {});
+    M.ScrollSpy.init(scrollSpy, {
+      scrollOffset:0
+    });
+  }
+
+  toolTipInit = () => {
+    
+    const tooltip = document.querySelector('.tooltipped');
+    
+    M.Tooltip.init(tooltip, {
+      enterDelay: 100,
+      position: 'top'
+    });
+
   }
 
   render() {
     const {loadedProjects, projects} = this.state;
-
+    this.toolTipInit();
     
     //  return (!loadedProjects)?
     //   <div className="loadingAnimation"></div>:
@@ -104,6 +113,7 @@ class App extends Component {
           <EducationPage />
           <CertificatePage />
           <ContactPage />
+          <FooterComponent />
         </div>
       );
   }

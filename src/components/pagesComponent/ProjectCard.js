@@ -30,20 +30,23 @@ const ProjectCard = ({title, imgSrc, description, githubRepo, displayExternalLin
 
                     <div className="card-action">
                         <a 
-                            className={` ${displayExternalLink}`}
+                            className={`tooltipped ${displayExternalLink}`}
                             href={hostedSite}
-                             
-                            
+                            target="_blank" 
+                            data-position="top" data-tooltip="Hosted app"
                             rel="noopener noreferrer">
-                            <i className="fas fa-external-link-alt fa-3x center left"></i>
+                            
+                            <i className="fas fa-external-link-alt fa-3x "
+                               >
+                            </i>
                         </a>
                         <a 
-                            className=""
+                            className="tooltipped"
                             href={githubRepo} 
-                            
-                            
+                            target="_blank"
+                            data-position="top" data-tooltip="Source"
                             rel="noopener noreferrer">
-                            <i className="fab fa-github-square fa-3x center left"></i>
+                            <i className="fab fa-github-square fa-3x "></i>
                         </a>
                     </div>
                 </div>   

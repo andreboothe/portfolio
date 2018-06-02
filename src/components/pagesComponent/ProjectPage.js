@@ -22,7 +22,7 @@ const ProjectPage = ({projects, projectImages}) => {
     )});
 
     return (
-        <section id="projects" className="section full-height scroll-spy">
+        <section id="projects" className="section full-height scrollspy">
             <h1 className="page-header">Projects</h1>
 
             <div className="container">
