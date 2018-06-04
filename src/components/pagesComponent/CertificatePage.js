@@ -15,7 +15,7 @@ const CertificatePage = () => {
                         title ="Front End Development "
                         subTitle ="FreeCodeCamp |May 2018"
                         aTagLink="https://www.freecodecamp.org/certification/andreboothe/legacy-front-end"
-                        info="Free Code Camp's Front End Development programcovers an estimated 
+                        info="Free Code Camp's Front End Development program covers an estimated 
                                 400 hours of course work that includes 
                                 HTML5, CSS, JavaScript and jQuery."
                     />
@@ -26,9 +26,19 @@ const CertificatePage = () => {
                         aTagLink="https://www.freecodecamp.org/certification/andreboothe/javascript-algorithms-and-data-structures"
                         info="Free Code Camp's JavaScript Algorithms and Data Structures Projects 
                                 covers an estimated 300 hours of course work that involves
-                                , intermediate and adavnced algorithm scripting."
+                                ES6, Regular Expressions, Data Structures, Object Oriented Programming, Debugging
+                                Functional Programming, Basic and Intermediate Algorithm Scripting."
                     />
 
+                    <EduCard 
+                        title ="Responsive Web Design "
+                        subTitle ="FreeCodeCamp |June 2018"
+                        aTagLink="https://www.freecodecamp.org/certification/andreboothe/responsive-web-design"
+                        info="Free Code Camp's Responsive Web Design program covers an estimated 
+                                300 hours of course work that includes 
+                                HTML5, CSS, Applied Visiual Design, Applied Accessibility, Responsive Web Design 
+                                Principles, CSS Flexbox  and CSS Grid."
+                    />    
                 </div>
             </div>
         </section>
