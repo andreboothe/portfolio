@@ -33,9 +33,10 @@ class App extends Component {
     const githubApi = 'https://api.github.com/users/andreboothe/repos?per_page=100';
     
     this.setProjects(githubApi)
-      .then(this.navigationInit())
-      .then(this.scrollSpyInit())
-      .then(this.toolTipInit());
+      .then(() => {this.navigationInit()})
+      .then(() => {this.scrollSpyInit()})
+      .then(() => {this.toolTipInit()});
+      
   }
 
   getDisplayProjects = (projects) => {
@@ -82,19 +83,24 @@ class App extends Component {
 
   toolTipInit = () => {
     
-    const tooltip = document.querySelector('.tooltipped');
+    const tooltip = document.querySelectorAll('.tooltipped');
     
     M.Tooltip.init(tooltip, {
       enterDelay: 100,
       position: 'top'
     });
-
+    
+    if(tooltip.length === 0){
+      setTimeout(()=>{this.toolTipInit()},100)
+    }
   }
+
+
 
   render() {
     const {loadedProjects, projects} = this.state;
-    this.toolTipInit();
     
+
     //  return (!loadedProjects)?
     //   <div className="loadingAnimation"></div>:
       return (

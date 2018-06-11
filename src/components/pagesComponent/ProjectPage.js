@@ -3,8 +3,10 @@ import React from 'react';
 // Components
 import ProjectCard from './ProjectCard';
 
-const ProjectPage = ({projects, projectImages}) => {
 
+
+const ProjectPage = ({projects, projectImages}) => {
+    
     const projectCards = projects.map((project, index) => {
         return (
         
@@ -21,6 +23,9 @@ const ProjectPage = ({projects, projectImages}) => {
             />
     )});
 
+
+    
+
     return (
         <section id="projects" className="section full-height scrollspy">
             <h1 className="page-header">Projects</h1>
@@ -28,6 +33,7 @@ const ProjectPage = ({projects, projectImages}) => {
             <div className="container">
                 <div className="row project-card">
                     {projectCards}
+                    
                 </div>
 
                 <p className="flow-text text-center">You may also view some of my other projects that have yet to make 
@@ -37,8 +43,10 @@ const ProjectPage = ({projects, projectImages}) => {
                     </a>
                 </p>
             </div>
+            
         </section>
     );
+
 }
 
 export default ProjectPage;

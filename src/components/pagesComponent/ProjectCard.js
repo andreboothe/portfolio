@@ -1,6 +1,10 @@
 import React from 'react';
 
+
+
 const ProjectCard = ({title, imgSrc, description, githubRepo, displayExternalLink, hostedSite}) => {
+
+    
 
     return (
         <div className="col s12 m6 l4">
