@@ -10,6 +10,7 @@ import SkillPage from '../components/pagesComponent/SkillPage';
 import CertificatePage from '../components/pagesComponent/CertificatePage';
 import ProjectPage from '../components/pagesComponent/ProjectPage';
 import FooterComponent from '../components/FooterComponent';
+import WorkExperiencePage from '../components/pagesComponent/WorkExperiencePage';
 
 // Includes
 import '../assets/css/styles.min.css';
@@ -17,6 +18,7 @@ import M from 'materialize-css';
 import skillList from '../components/data/skillList';
 import projectNameList from '../components/data/projectNameList';
 import projectImages from '../components/data/projectImages';
+import workExperienceList from '../components/data/workExperienceList';
 
 class App extends Component {
 
@@ -109,8 +111,11 @@ class App extends Component {
           <Nav />
           <LandingPage />
           <AboutPage />
+          <WorkExperiencePage 
+            workExperienceList = {workExperienceList}
+          />
           <SkillPage 
-            skillList= {skillList}
+            skillList = {skillList}
           />
           <ProjectPage 
             projects = {projects}

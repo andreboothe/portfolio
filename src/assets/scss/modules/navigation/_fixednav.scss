@@ -11,6 +11,11 @@
         
     }
 
+    @media(max-width: 1120px){
+        .container{
+            width: 95%;
+        }
+    }
     @media(max-width: 600px){
 
         h3{

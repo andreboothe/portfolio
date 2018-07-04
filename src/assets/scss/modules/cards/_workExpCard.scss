@@ -1,0 +1,82 @@
+#work-experience{
+    .card{
+        align-self: center;
+    }
+
+    img{
+        height: 32px;
+        
+    }
+
+    .job-title__header{
+        position: absolute;
+        right:5%;
+        vertical-align: middle;
+        font-weight: 300;
+        color: rgba(0,0,0,.7);
+    }
+
+    .job-title__sub{
+        display: none;
+    }
+
+    .collection-item {
+        line-height: 200%;
+        list-style-type: disc;
+        margin-left: 24px;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .company-name{
+        position: absolute;
+        left:30%;
+        vertical-align: middle;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .date{
+        color: rgba(0,0,0,.5);
+        font-size: 125%;
+    }
+
+    .info-title{
+        font-weight: 300;
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+
+    @media(max-width: 1100px){
+        .company-name{
+            
+            left:20%;
+        }
+    }
+
+    @media(max-width: 900px){
+        .company-name{   
+            left:40%;
+        }
+
+        .job-title__header{
+            display: none;
+        }
+
+        .job-title__sub{
+            
+            left:40%;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .info-title{
+           
+            margin-top: 1rem;
+            
+        }
+    }
+
+    
+}

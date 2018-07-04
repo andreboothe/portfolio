@@ -19,13 +19,22 @@ const SideNav = () => {
                 }
                 icon="hide-on-med-and-down"
             />
-
+            <li><a className="waves-effect waves-light" href="">Experience</a></li>
+  
             <NavItem 
                 liTagClasses = "collection-item waves-effect waves-teal"
                 aTagClasses = "teal-text"
                 link = "#about"
                 content = {<p>About</p>}
                 icon = "fas fa-user fa-2x  teal-text"
+            />
+
+            <NavItem 
+                liTagClasses = "collection-item waves-effect waves-teal"
+                aTagClasses = "indigo-text"
+                link = "#work-experience"
+                content = {<p>Experience</p>}
+                icon = "fas fa-chart-line fa-2x  indigo-text"
             />
 
             <NavItem 
