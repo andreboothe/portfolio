@@ -15,6 +15,7 @@ const NavBar = () => {
                         </a>
                         <ul className="right hide-on-med-and-down">
                             <li><a className="waves-effect waves-light" href="#about">About</a></li>
+                            <li><a className="waves-effect waves-light" href="#work-experience">Experience</a></li>
                             <li><a className="waves-effect waves-light" href="#skills">Skills</a></li>
                             <li><a className="waves-effect waves-light" href="#projects">Projects</a></li>
                             <li><a className="waves-effect waves-light" href="#education">Education</a></li>
